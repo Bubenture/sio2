@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.71 800.66">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 413.34px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: ArialRoundedWGL-Bold, 'Arial Rounded WGL';
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 404.17px;
+      }
+
+      .cls-3 {
+        font-size: 305.42px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 57.41px;
+      }
+
+      .cls-5 {
+        fill: #ed1e79;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-5" cx="312.27" cy="91.86" r="29.85"/>
+  <line class="cls-4" x1="312.27" y1="168.79" x2="312.27" y2="407.61"/>
+  <text class="cls-1" transform="translate(0 354.61) scale(.97 1)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-2" transform="translate(7.43 678.1) scale(.72 1)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-3" transform="translate(225.59 678.63) scale(.99 1)"><tspan x="0" y="0">2</tspan></text>
+</svg>

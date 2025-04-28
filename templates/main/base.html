@@ -1,0 +1,66 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% url 'dynamic_css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'images\favicon.svg' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images\favicon.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'images\favicon.png' %}">
+    <link rel="shortcut icon" href="{% static 'images\favicon.svg' %}">
+    
+<!-- /* title */-->
+    <title>{% block title %}{% endblock %}</title>
+
+<div class="page">
+
+<!--  /* header */-->
+<div class="header0">
+    <a  href="{% url 'index' %}"><img src="{% static 'images\logo.png' %}" width="25" height="40" class="images-mobile"></a>
+</div>
+
+<header class="header">
+    <nav>
+        <a style="margin: 5px 0 0 0 ;" href="{% url 'index' %}"><img src="{% static 'images\logo.svg' %}" width="55" height="55"></a>
+    </nav>
+    <nav>
+        <a style="margin: 0 15px 2px 0;"  href="tel:+79535889910" style="font-size: 16px;">+7 (953) 588 99 10</a>
+        <a   href="https://2gis.ru/krasnoyarsk/firm/70000001065361302"><img src="{% static 'images\2gis.svg' %}" width="25" height="25"></a> 
+        <a  style="margin: 0 0 0 15px;" href="https://api.whatsapp.com/send/?phone=79535889910&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%9F%D0%B8%D1%88%D1%83+%D0%B8%D0%B7+%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F+2%D0%93%D0%98%D0%A1.%0A%0A&type=phone_number&app_absent=0"><img src="{% static 'images\whatsapp.svg' %}" width="25" height="25"></a> 
+        <a  style="margin: 0 15px 0 15px;" href="https://t.me/+79535889910"><img src="{% static 'images\телеграм.svg' %}" width="25" height="25"></a> 
+    </nav>
+</header>
+
+<!--   /* content */-->
+<main class="content">
+        {% block content %}{% endblock %}
+</main>
+
+<!--   /* footer */-->
+<footer class="footer">
+    <p>
+        <a style="margin: 0 15px 2px 0;"  href="tel:+79535889910" style="font-size: 16px;">Sio2-Кварц 2024: +7 (953) 588 99 10</a>
+        <br><br>
+        <a   href="https://2gis.ru/krasnoyarsk/firm/70000001065361302"><img src="{% static 'images\2gis.svg' %}" width="25" height="25"></a> 
+        <a  style="margin: 0 0 0 15px;" href="https://api.whatsapp.com/send/?phone=79535889910&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%9F%D0%B8%D1%88%D1%83+%D0%B8%D0%B7+%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F+2%D0%93%D0%98%D0%A1.%0A%0A&type=phone_number&app_absent=0"><img src="{% static 'images\whatsapp.svg' %}" width="25" height="25"></a> 
+        <a  style="margin: 0 15px 0 15px;" href="https://t.me/+79535889910"><img src="{% static 'images\телеграм.svg' %}" width="25" height="25"></a> 
+        
+      
+    </p>
+   
+</footer>
+
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+<script src="{% static 'js/phoneinput.js' %}"></script>
+
+</body>
+</html>
