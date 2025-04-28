@@ -62,8 +62,8 @@ def application(request):
 
 def send_to_telegram(data):
     try:
-        TELEGRAM_API_KEY = '6895663437:AAG0R0TyjUp3e7hrfUml2_7gKIWXKP-ZQJs'
-        CHAT_ID = '-4103390932'
+        TELEGRAM_API_KEY = ''
+        CHAT_ID = ''
         # TELEGRAM_API_KEY = os.getenv('TELEGRAM_API_KEY')
         # CHAT_ID = os.getenv('CHAT_ID')
         if not TELEGRAM_API_KEY or not CHAT_ID:
